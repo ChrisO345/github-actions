@@ -19,3 +19,5 @@ jobs:
       # You can test your matrix by printing the current Python version
       - name: Display Python version
         run: python --version
+      - name: Display Current Date and Time
+        run: python -c "import datetime; print(datetime.date.today())"
