@@ -16,3 +16,6 @@ jobs:
 
       - name: Run Fortran program
         run: ./hello_world
+
+      - name: List directories
+        run: ls
