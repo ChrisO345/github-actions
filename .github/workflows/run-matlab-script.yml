@@ -1,5 +1,5 @@
 name: Run MATLAB Script with github actions
-on: [pull_request]
+on: [push]
 jobs:
   my-job:
     name: Run MATLAB Script
