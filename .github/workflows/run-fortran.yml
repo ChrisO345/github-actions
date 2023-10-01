@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install gfortran
-        uses: sudo apt-get install gfortran
+        run: sudo apt-get install gfortran
 
       - name: Compile Fortran program
         run: gfortran hello_world.f90 -o hello_world
