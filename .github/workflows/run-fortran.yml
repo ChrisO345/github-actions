@@ -1,18 +1,15 @@
 name: Compile and run Fortran program
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install gfortran
-        uses: awvwgk/setup-fortran@v1
+        uses: sudo apt-get install gfortran
 
       - name: Compile Fortran program
         run: gfortran hello_world.f90 -o hello_world
